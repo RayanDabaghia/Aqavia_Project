@@ -11,13 +11,16 @@ import Contact from "./pages/user/Contact";
 import Dashboard from "./pages/admin/Dashboard";
 import UserManagement from "./pages/admin/UserManagement";
 import About from "./pages/user/About";
+import { HashRouter } from "react-router-dom";
 
 export default function App() {
   return (
-    <BrowserRouter>
+
+<HashRouter>
+  
       <Routes>
 
-       
+
         <Route path="/" element={<Navigate to="/auth/login" replace />} />
 
         <Route path="auth" element={<AuthLayout />}>
@@ -41,12 +44,12 @@ export default function App() {
               <AdminLayout />
             </ProtectedRoute>
           }
-        >
+          >
           <Route index element={<Dashboard />} />
           <Route path="users" element={<UserManagement />} />
         </Route>
 
       </Routes>
-    </BrowserRouter>
+  </HashRouter>
   );
 }
