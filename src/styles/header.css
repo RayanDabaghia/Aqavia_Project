@@ -1,0 +1,35 @@
+.header {
+  padding: 10px;
+  background: #f4f4f4;
+  border-bottom: 1px solid #ccc;
+}
+
+.top-btn {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.navbar {
+  display: flex;
+  gap: 15px;
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+}
+
+.nav-item {
+  padding: 6px 10px;
+  background: #eee;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.btn {
+  padding: 8px 12px;
+  background: #ddd;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
